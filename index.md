@@ -1,3 +1,3 @@
-#JHS Therapy
+# JHS Therapy
 
 Website under construction.
