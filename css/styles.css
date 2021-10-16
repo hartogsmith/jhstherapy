@@ -4,7 +4,7 @@ html, body {
 body {
     font-family: 'Oxygen', sans-serif;
     margin: 0;
-    background-image: url('/img/bg-page.svg');
+    background-image: url('../img/bg-page.svg');
     background-size: cover;
 }
 .container {
