@@ -8,6 +8,7 @@ body {
     background-image: url('../img/bg-page.svg');
     background-size: cover;
     color: rgb(20, 20, 40);
+    font-size: 30px
 }
 h1 {
     font-size: 20rem;
@@ -16,7 +17,7 @@ p {
     font-size: 10rem;
 }
 a {
-    color: rgb(80, 80, 100);
+    color: rgb(60, 60, 80);
 }
 .container {
     height: 100%;
@@ -33,4 +34,25 @@ a {
 }
 .item {
     text-align: center;
+}
+
+@media (max-width: 575px) {
+    body {
+        
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        
+    }
+}
+
+@media (max-width: 991px) {
+    body {
+        font-size: 16px
+    }
+}
+@media (max-width: 1199px) {
+
 }
