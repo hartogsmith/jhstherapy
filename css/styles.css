@@ -19,13 +19,17 @@ p {
 a {
     color: rgb(60, 60, 80);
 }
+ul , li {
+    list-style: none;
+    padding-left: 0;
+}
 li {
-    display: inline-block;
-    margin-right: 10px;
+    display: block;
+    margin-right: 0px;
 }
 li + li {
-    padding-left: 11px;
-    border-left: 1px solid rgb(60, 60, 80);
+    padding-left: 0px;
+    border-left: none;
 }
 .container {
     height: 100%;
@@ -43,10 +47,7 @@ li + li {
 .item {
     text-align: center;
 }
-ul , li {
-    list-style: none;
-    padding-left: 0;
-}
+
 @media (min-width: 576px) {
     body {
         
@@ -58,12 +59,12 @@ ul , li {
         font-size: 16px
     }
     li {
-        display: block;
-        margin-right: 0px;
+        display: inline-block;
+        margin-right: 10px;
     }
     li + li {
-        padding-left: 0px;
-        border-left: none;
+        padding-left: 11px;
+        border-left: 1px solid rgb(60, 60, 80);
     }
 }
 @media (min-width: 1200px) {
