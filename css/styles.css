@@ -90,7 +90,7 @@ a {
 a.btn {
     color: var(--gray);
     background-color: var(--green);
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: var(--rad);
     width: 100%;
     display: inline-block;
@@ -101,7 +101,7 @@ a.btn:hover {
     background-color: var(--gray);
 }
 a.btn .fas {
-    padding-right: 1em;
+    padding-right: 15px;
 }
 .container {
     margin: 0;
