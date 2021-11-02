@@ -10,16 +10,17 @@
     --teal: #20c997;
     --cyan: #17a2b8;
     --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
+    --gray: #3c3c50;
+    --gray-dark: #141428;
     --primary: #007bff;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
+    --white: #f8f9fa;
+    --black: #343a40;
+    --rad: 15%;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -30,8 +31,6 @@
     --font-family-headline: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
-
-
 html, body {
     height: 100%;
 }
@@ -40,7 +39,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--green);
-    color: rgb(20, 20, 40);
+    color: var(--gray-dark);
     font-size: 40px
 }
 img.logomark {
@@ -60,10 +59,13 @@ p, li {
     font-size: 1em;
 }
 a {
-    color: rgb(60, 60, 80);
+    color: var(--gray);
 }
 a.button {
-    color: rgb(60, 60, 80);
+    color: var(--white);
+    background-color: var(--green);
+    padding: 1rem 1.5rem;
+    border-radius: var(--rad);
 }
 ul , li {
     list-style: none;
@@ -95,13 +97,7 @@ li + li {
     text-align: center;
 }
 
-@media (max-width: 991px) {
-    body {
-
-    }
-}
-
-@media (min-width: 992px) {
+@media (min-width: var(--breakpoint-lg)) {
     body {
         font-size: 16px
     }
@@ -118,7 +114,7 @@ li + li {
     }
     li + li {
         padding-left: 11px;
-        border-left: 1px solid rgb(60, 60, 80);
+        border-left: 1px solid var(--gray);
         margin-top: 1.5rem; 
     }
 }
