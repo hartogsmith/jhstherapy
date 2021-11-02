@@ -1,13 +1,47 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #98c94b;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Oxygen", sans-serif;
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --font-family-headline: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+
+
 html, body {
     height: 100%;
 }
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: var(--font-family-sans-serif);
     margin: 0;
     padding: 0;
-    background-color: #98c94b;
+    background-color: var(--green);
     color: rgb(20, 20, 40);
-    font-size: 30px
+    font-size: 40px
 }
 img.logomark {
     margin: 0 auto 20px;
@@ -16,10 +50,19 @@ img.logomark {
 h1 {
     font-size: 2em;
 }
+h2 {
+    font-size: 1.5em;
+}
+h2 strong {
+    display: none;
+}
 p, li {
     font-size: 1em;
 }
 a {
+    color: rgb(60, 60, 80);
+}
+a.button {
     color: rgb(60, 60, 80);
 }
 ul , li {
@@ -34,14 +77,14 @@ li {
 li + li {
     padding-left: 0px;
     border-left: none;
+    margin-top: 1rem;
 }
 .container {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 40px;
 }
 .row {
     width: auto;
@@ -61,6 +104,13 @@ li + li {
 @media (min-width: 992px) {
     body {
         font-size: 16px
+    }
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+    h2 strong {
+        display: inline;
     }
     li {
         display: inline-block;
