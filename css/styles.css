@@ -126,6 +126,7 @@ a.btn .fas {
     .container {
         align-items: center;
         justify-content: center;
+        margin-top: 0;
     }
     h2 strong {
         display: inline;
