@@ -54,7 +54,7 @@ li + li {
 
 @media (max-width: 991px) {
     body {
-        font-size: 22px 
+
     }
 }
 
@@ -64,11 +64,12 @@ li + li {
     }
     li {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 1.5rem;
     }
     li + li {
         padding-left: 11px;
         border-left: 1px solid rgb(60, 60, 80);
+        margin-top: 1.5rem; 
     }
 }
 @media (min-width: 1200px) {
