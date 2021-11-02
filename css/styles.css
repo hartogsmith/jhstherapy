@@ -90,7 +90,7 @@ a {
 a.btn {
     color: var(--gray);
     background-color: var(--green);
-    padding: 1rem 1.5rem;
+    padding: 10px;
     border-radius: var(--rad);
     width: 100%;
     display: inline-block;
@@ -135,7 +135,7 @@ a.btn .fas {
     }
     li + li {
         margin-top: 1.5rem; 
-        margin-left: 2em;
+        margin-left: 20px;
     }
     li a.btn {
         width: auto;
