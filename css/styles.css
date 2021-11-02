@@ -9,7 +9,7 @@
     --green: #98c94b;
     --teal: #20c997;
     --cyan: #17a2b8;
-    --white: #fff;
+    --white: #ffffff;
     --gray: #3c3c50;
     --gray-dark: #141428;
     --primary: #007bff;
@@ -20,6 +20,7 @@
     --danger: #dc3545;
     --white: #f8f9fa;
     --black: #343a40;
+    --vspace: 4vh;
     --rad: 1rem;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
@@ -48,9 +49,14 @@ img.logomark {
 }
 h1 {
     font-size: 2em;
+    margin: var(--vspace) 0;
 }
 h2 {
     font-size: 1.5em;
+    margin: var(--vspace) 0;
+}
+h1+h2, h2+h3, h3+h4{
+    margin-top: 0;
 }
 h2 strong {
     display: none;
@@ -58,14 +64,11 @@ h2 strong {
 p, li {
     font-size: 1em;
 }
-a {
-    color: var(--gray);
+p, ul {
+    margin: var(--vspace) 0;
 }
-a.btn {
-    color: var(--white);
-    background-color: var(--green);
-    padding: 1rem 1.5rem;
-    border-radius: var(--rad);
+ul {
+    margin-top: 2rem;
 }
 ul , li {
     list-style: none;
@@ -81,7 +84,25 @@ li + li {
     border-left: none;
     margin-top: 1rem;
 }
-
+a {
+    color: var(--gray);
+}
+a.btn {
+    color: var(--gray);
+    background-color: var(--green);
+    padding: 1rem 1.5rem;
+    border-radius: var(--rad);
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+}
+a.btn:hover {
+    color: var(--green);
+    background-color: var(--gray);
+}
+a.btn .fas {
+    padding-right: 1em;
+}
 .container {
     height: 100%;
     margin: 0;
@@ -111,11 +132,12 @@ li + li {
     }
     li {
         display: inline-block;
-        margin-right: 1.5rem;
     }
     li + li {
-        padding-left: 11px;
-        border-left: 1px solid var(--gray);
         margin-top: 1.5rem; 
+        margin-left: 2em;
+    }
+    li a.btn {
+        width: auto;
     }
 }
