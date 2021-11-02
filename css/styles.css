@@ -20,7 +20,7 @@
     --danger: #dc3545;
     --white: #f8f9fa;
     --black: #343a40;
-    --rad: 15%;
+    --rad: 1rem;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -61,7 +61,7 @@ p, li {
 a {
     color: var(--gray);
 }
-a.button {
+a.btn {
     color: var(--white);
     background-color: var(--green);
     padding: 1rem 1.5rem;
@@ -81,6 +81,7 @@ li + li {
     border-left: none;
     margin-top: 1rem;
 }
+
 .container {
     height: 100%;
     margin: 0;
@@ -97,7 +98,7 @@ li + li {
     text-align: center;
 }
 
-@media (min-width: var(--breakpoint-lg)) {
+@media (min-width: 992px) {
     body {
         font-size: 16px
     }
@@ -117,7 +118,4 @@ li + li {
         border-left: 1px solid var(--gray);
         margin-top: 1.5rem; 
     }
-}
-@media (min-width: 1200px) {
-
 }
