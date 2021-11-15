@@ -9,7 +9,7 @@
     --green: #98c94b;
     --teal: #20c997;
     --cyan: #17a2b8;
-    --white: #ffffff;
+    --white: #ece8d7;
     --gray: #3c3c50;
     --gray-dark: #141428;
     --primary: #007bff;
@@ -39,7 +39,7 @@ body {
     font-family: var(--font-family-sans-serif);
     margin: 0;
     padding: 0;
-    background-color: var(--green);
+    background-color: var(--white);
     color: var(--gray-dark);
     font-size: 40px
 }
