@@ -107,11 +107,11 @@ a.btn .fas {
     margin: 0;
     padding: 0;
     display: flex;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .row {
     width: auto;
-    padding: 10rem;
+    padding: 2rem 10rem;
     background-color: rgba(255,255,255,.8);
 }
 .item {
@@ -125,7 +125,9 @@ a.btn .fas {
     .container {
         align-items: center;
         justify-content: center;
-        margin-top: 0;
+    }
+    .row {
+        padding: 10rem;
     }
     h2 strong {
         display: inline;
