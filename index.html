@@ -13,36 +13,52 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 		@import url('css/styles.css');
+		@import url('https://assets.calendly.com/assets/external/widget.css');
 	</style>
 	<script src="https://kit.fontawesome.com/291c9933c9.js" crossorigin="anonymous"></script>
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 	<link rel="manifest" href="img/site.webmanifest">
+
 </head>
 <body>
 	<main class="container">
 		<row class="row">
 			<item class="item">
 				<img class="logomark" src="img/jhs-brain.png" alt="Line art of leaves arranged in the shape of a human brain.">
-				<h1>Jessica H. Smith, LCSW</h1>
+				<h1 class="mb-0">Jessica H. Smith, LCSW</h1>
 				<small>JHS Therapy, PLLC</small>
-				<h2><strong>Individual Therapy, Parent Support, Consultation & Training<br>
-					Virtual in Texas<br>
-					In-person in Houston</strong></h2>
-				<p>I currently have wait-list of a few weeks for Individual Therapy</p>
+				<h2>Individual Therapy, Parent Support, Consultation & Training</h2>
+				<h3>Virtual in Texas | In-person in Houston</h2>
 
-				<p>To discuss my services and wait times, <a href="https://calendly.com/jhstherapy/15"></a>please schedule a 15 minute phone consultation</a>.
+				<hr>
+
+				<p class="mt-0">I currently have wait-list of a few weeks for Individual Therapy</p>
+
+				<p>To discuss my services and wait times, <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jhstherapy'});return false;">please schedule a 15 minute phone consultation</a>.
+
 					
 				<br><br>
 				
 				For general questions, <a href="mailto:info@jhstherapy.com?subject=Question from website visitor" name="Email info@jhstherapy.com">email info@jhstherapy.com</a>
 				</p>
 
-				<ul>
+				<ul class="contact">
 					<li><a  class="btn" href="mailto:info@jhstherapy.com?subject=Question from website visitor" name="Email info@jhstherapy.com"><i class="fas fa-envelope"></i>info@jhstherapy.com</a></li>
 					<li><a class="btn" href="tel:281.310.1262" name="Call 281.310.1262"><i class="fas fa-phone"></i>281.310.1981</a></li>
+					<li><a name="Schedule time with me" class="btn" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jhstherapy'});return false;"><i class="fas fa-calendar"></i>Schedule</a></li>
 				</ul>
+
+				<hr>
+
+				<ul class="social mt-0">
+					<li><a name="Facebook" href="https://www.facebook.com/jhstherapy"><i class="fa fa-facebook"></i></a></li>
+					<li><a name="Instagram" href="https://www.instagram.com/jhstherapy/"><i class="fa fa-instagram"></i></a></li>
+					<li><a name="LinkedIn" href="https://linkedin.com/in/jhslcsw"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+
 			</item>
 		</row>
 	</main>

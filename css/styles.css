@@ -44,7 +44,7 @@ body {
     color: var(--gray-dark);
     font-size: 40px
 }
-*{
+a {
     transition: all ease-in .3s;
 }
 
@@ -54,7 +54,7 @@ img.logomark {
 }
 h1 {
     font-size: 2em;
-    margin: var(--vspace) 0;
+    margin: var(--vspace) 0 0 0;
 }
 h2 {
     font-size: 1.5em;
@@ -66,31 +66,74 @@ h1+h2, h2+h3, h3+h4{
 h2 strong {
     display: none;
 }
+h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
 p, li {
     font-size: 1em;
 }
 small {
+    text-transform: uppercase;
     font-size: .7em;
+    margin: 0 0 2em;
 }
-p, ul, small {
+p, ul {
     margin: var(--vspace) 0;
 }
 ul {
     margin-top: 2rem;
 }
-ul , li {
+ul, li {
     list-style: none;
     padding-left: 0;
 }
-li {
-    display: block;
-    margin-right: 0px;
-    text-align: left;
+ul.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
 }
-li + li {
-    padding-left: 0px;
+ul.contact li {
+    /* display: block;
+    margin-right: 0px;
+    text-align: left; */
+}
+ul.contact li + li {
+    /* padding-left: 0px;
     border-left: none;
-    margin-top: 1rem;
+    margin-top: 1rem; */
+}
+ul.contact li a {
+    border: none;
+}
+ul.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+ul.social li {
+    margin: 1em;
+}
+ul.social li a {
+    color: var(--green);
+    text-decoration: none;
+    border: none;
+}
+ul.social li a:hover {
+    color: var(--gray);
+    text-decoration: none;
+    border: none;
+}
+hr {
+    height: 1px;
+    background-color: transparent;
+    border-top: 4px dashed var(--green);
 }
 a {
     color: var(--gray);
@@ -118,6 +161,7 @@ a.btn:hover {
 a.btn .fas {
     padding-right: 15px;
 }
+
 .container {
     margin: 0;
     padding: 0;
@@ -126,7 +170,7 @@ a.btn .fas {
 }
 .row {
     width: auto;
-    padding: 2rem 10rem;
+    padding: 2rem 4rem;
     background-color: var(--gray-light);
 }
 .item {
@@ -142,17 +186,20 @@ a.btn .fas {
         justify-content: center;
     }
     .row {
-        padding: 10rem;
+        /*padding: 10rem;*/
     }
     h2 strong {
         display: inline;
     }
+    ul.contact {
+        flex-direction: row;
+    }
     li {
-        display: inline-block;
+        /*display: inline-block;*/
     }
     li + li {
-        margin-top: 1.5rem; 
-        margin-left: 20px;
+        /* margin-top: 1.5rem; */
+        margin-left: 2rem;
     }
     li a.btn {
         width: auto;
