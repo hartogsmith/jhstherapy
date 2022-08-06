@@ -86,10 +86,12 @@ li + li {
 }
 a {
     color: var(--gray);
+    text-decoration: none;
     border-bottom: 1px solid var(--gray);
 }
 a:hover {
     color: var(--gray);
+    text-decoration: none;
     border-bottom: 1px solid var(--green);
 }
 a.btn {
