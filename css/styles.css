@@ -11,6 +11,7 @@
     --cyan: #17a2b8;
     --white: #ece8d7;
     --gray: #3c3c50;
+    --gray-light: #fefefe;
     --gray-dark: #141428;
     --primary: #007bff;
     --secondary: #6c757d;
@@ -68,7 +69,10 @@ h2 strong {
 p, li {
     font-size: 1em;
 }
-p, ul {
+small {
+    font-size: .7em;
+}
+p, ul, small {
     margin: var(--vspace) 0;
 }
 ul {
@@ -123,7 +127,7 @@ a.btn .fas {
 .row {
     width: auto;
     padding: 2rem 10rem;
-    background-color: rgba(255,255,255,.8);
+    background-color: var(--gray-light);
 }
 .item {
     text-align: center;
