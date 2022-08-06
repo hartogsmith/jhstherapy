@@ -33,16 +33,19 @@
     --font-family-headline: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
-html, body {
+html {
     height: 100%;
 }
 body {
     font-family: var(--font-family-sans-serif);
     margin: 0;
     padding: 0;
-    background-color: var(--purple);
+    background-color: var(--light-gray);
     color: var(--gray-dark);
-    font-size: 18px
+    font-size: 18px;
+    border: 20px solid var(--purple);
+    border-right: none;
+    border-left: none;
 }
 a {
     transition: all ease-in .3s;
@@ -180,7 +183,9 @@ a.btn .fas {
 
 @media (min-width: 992px) {
     body {
-        font-size: 16px
+        font-size: 16px;
+        background-color: var(--purple);
+        border: none;
     }
     .container {
         align-items: center;
