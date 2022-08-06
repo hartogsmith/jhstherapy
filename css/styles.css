@@ -88,11 +88,12 @@ a {
     color: var(--gray);
     text-decoration: none;
     border-bottom: 1px solid var(--gray);
+    transition: all ease-in .3s;
 }
 a:hover {
     color: var(--gray);
     text-decoration: none;
-    border-bottom: 1px solid var(--green);
+    border-bottom: 4px solid var(--green);
 }
 a.btn {
     color: var(--gray);
