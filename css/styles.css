@@ -22,7 +22,7 @@
     --white: #f8f9fa;
     --black: #343a40;
     --vspace: 4vh;
-    --rad: 1rem;
+    --rad: 1em;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -71,21 +71,21 @@ h2 strong {
 }
 h3 {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 p, li {
     font-size: 1em;
 }
 small {
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: .9em;
     margin: 0 0 2em;
 }
 p, ul {
     margin: var(--vspace) 0;
 }
 ul {
-    margin-top: 2rem;
+    margin-top: 2em;
 }
 ul, li {
     list-style: none;
@@ -108,7 +108,7 @@ ul.contact li {
 ul.contact li + li {
     /* padding-left: 0px;
     border-left: none;*/
-    margin-top: 1rem; 
+    margin-top: 1em; 
 }
 ul.contact li a {
     border: none;
@@ -174,7 +174,7 @@ a.btn .fas {
 }
 .row {
     width: auto;
-    padding: 2rem;
+    padding: 2em;
     background-color: var(--gray-light);
 }
 .item {
@@ -192,10 +192,13 @@ a.btn .fas {
         justify-content: center;
     }
     .row {
-        /*padding: 10rem;*/
+        /*padding: 10em;*/
     }
     h2 strong {
         display: inline;
+    }
+    small {
+        font-size: .7em;
     }
     ul.contact {
         flex-direction: row;
@@ -205,8 +208,8 @@ a.btn .fas {
         width: auto;
     }
     ul.contact li + li {
-        /* margin-top: 1.5rem; */
-        margin-left: 2rem;
+        /* margin-top: 1.5em; */
+        margin-left: 2em;
         margin-top: 0;
         
     }
