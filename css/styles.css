@@ -33,7 +33,7 @@
     --font-family-headline: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
-html {
+html, body {
     height: 100%;
 }
 body {
@@ -43,7 +43,7 @@ body {
     background-color: var(--light-gray);
     color: var(--gray-dark);
     font-size: 18px;
-    border: 20px solid var(--purple);
+    border: 36px solid var(--purple);
     border-right: none;
     border-left: none;
 }
