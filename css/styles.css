@@ -86,9 +86,11 @@ li + li {
 }
 a {
     color: var(--gray);
+    border-bottom: 1px solid var(--gray);
 }
 a:hover {
-    color: var(--green);
+    color: var(--gray);
+    border-bottom: 1px solid var(--green);
 }
 a.btn {
     color: var(--gray);
